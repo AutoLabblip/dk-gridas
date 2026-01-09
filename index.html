@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Marketinga atskaite - SIA DK GRIDAS</title>
+<style>
+  :root{
+    /* DK GRĪDAS pelēkzilie akcenti */
+    --accent-1:#5b728a;
+    --accent-2:#3b556d;
+    --glass-bg: rgba(255,255,255,.65);
+    --glass-brd: rgba(255,255,255,.35);
+    --text:#0f172a;
+    --muted:#64748b;
+  }
+  html,body{height:100%}
+  body{
+    margin:0; padding:0; font-family:"Segoe UI",Arial,sans-serif; color:var(--text);
+    background: linear-gradient(135deg,#c9f1e9, #e6f7f4, #d4f0eb);
+    background-size:200% 200%;
+    animation:bgShift 18s ease-in-out infinite;
+  }
+  @keyframes bgShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px}
+  .fade-in{opacity:0;transform:translateY(8px);animation:fade .9s ease forwards}
+  .fade-in:nth-child(1){animation-delay:.05s}
+  .fade-in:nth-child(2){animation-delay:.12s}
+  .fade-in:nth-child(3){animation-delay:.18s}
+  @keyframes fade{to{opacity:1;transform:none}}
+  .header{
+    position:relative;text-align:center;padding:28px 18px;border-radius:20px;
+    background:var(--glass-bg);border:1px solid var(--glass-brd);
+    box-shadow:0 10px 30px rgba(15,23,42,.12);backdrop-filter:saturate(140%) blur(8px);
+  }
+  h1{font-size:26px;margin:8px 0 0}
+  .period{color:var(--muted);font-size:14px;margin-top:6px}
+  .cta{
+    display:inline-flex;align-items:center;gap:8px;margin-top:14px;text-decoration:none;
+    padding:12px 18px;border-radius:14px;color:#fff;font-weight:600;
+    background:linear-gradient(135deg,var(--accent-1),var(--accent-2));
+    box-shadow:0 8px 20px rgba(59,85,109,.28);
+    transition:transform .15s ease,box-shadow .15s ease,filter .15s ease;
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 14px 26px rgba(59,85,109,.38);filter:saturate(110%)}
+  .cta .icon{font-size:18px}
+  .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+  @media(min-width:720px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+  .card{
+    background:var(--glass-bg);border:1px solid var(--glass-brd);border-radius:18px;padding:16px;
+    box-shadow:0 10px 28px rgba(2,6,23,.12);backdrop-filter:saturate(140%) blur(8px);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(2,6,23,.18)}
+  .card h2{font-size:16px;margin:0 0 8px}
+  .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(min-width:720px){.kpis{grid-template-columns:repeat(4,1fr)}}
+  .kpi{border-radius:14px;padding:12px;background:rgba(255,255,255,.72);border:1px solid rgba(15,23,42,.06)}
+  .kpi .label{font-size:12px;color:var(--muted)}
+  .kpi .value{font-size:20px;font-weight:700}
+  .table{width:100%;border-collapse:collapse;font-size:14px}
+  .table th,.table td{padding:10px 8px;border-bottom:1px solid rgba(15,23,42,.08);text-align:left}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;background:rgba(91,114,138,.15);color:#243447;font-size:12px;font-weight:600}
+  .conclusions{margin-top:20px}
+  .muted{color:var(--muted);font-size:13px}
+  .foot{text-align:center;color:var(--muted);font-size:12px;margin-top:18px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- HEADER -->
+    <div class="header fade-in">
+      <h1>Mēneša mārketinga atskaite — SIA DK GRĪDAS</h1>
+      <div class="period">Atskaites periods: <b>Novembris 2025</b></div>
+      <div class="muted" style="margin-top:6px">Last updated: {{LAST_UPDATED}}</div>
+      <a class="cta" href="https://www.dkgridas.lv" target="_blank" rel="noopener">
+        <span class="icon">🌐</span> Apskatīt mājaslapu
+      </a>
+      <div class="muted" style="margin-top:6px">📞 +371 26868094 · 📧 info@dkgridas.lv</div>
+    </div>
+
+    <!-- GOOGLE ADS -->
+    <div class="card fade-in" style="margin-top:18px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+        <h2>Google Ads</h2>
+        <span class="badge">Last 30 days · Nov 5 – Dec 4, 2025</span>
+      </div>
+      <div class="kpis" style="margin-top:8px">
+        <div class="kpi"><div class="label">Kopējās izmaksas</div><div class="value">€380</div></div>
+        <div class="kpi"><div class="label">Klikšķi</div><div class="value">1.08K</div></div>
+        <div class="kpi"><div class="label">Parādījumi</div><div class="value">6.82K</div></div>
+        <div class="kpi"><div class="label">CTR</div><div class="value">15.82%</div></div>
+        <div class="kpi"><div class="label">Vid. CPC</div><div class="value">€0.35</div></div>
+        <div class="kpi"><div class="label">Nederīgie klikšķi</div><div class="value">64</div></div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:12px">
+        <div class="card">
+          <h2>TOP atslēgvārdi</h2>
+          <table class="table">
+            <thead><tr><th>Atslēgvārds</th><th>Klikšķi</th><th>CTR</th><th>Avg. CPC</th><th>Izmaksas</th></tr></thead>
+            <tbody>
+              <tr><td>Siltās grīdas</td><td>327</td><td>14.34%</td><td>€0.36</td><td>€116.66</td></tr>
+              <tr><td>estrich grīda</td><td>298</td><td>17.25%</td><td>€0.35</td><td>€103.39</td></tr>
+              <tr><td>melnās grīdas betonēšana</td><td>298</td><td>15.71%</td><td>€0.35</td><td>€105.63</td></tr>
+              <tr><td>siltā grīdu ierīkošana cenas</td><td>35</td><td>20.71%</td><td>€0.34</td><td>€11.91</td></tr>
+              <tr><td>betona grīdu slīpēšana</td><td>29</td><td>22.22%</td><td>€0.34</td><td>€6.78</td></tr>
+              <tr><td>grīdas betonēšana</td><td>20</td><td>23.19%</td><td>€0.35</td><td>€5.59</td></tr>
+              <tr><td>estrich grīdas tehnoloģija</td><td>15</td><td>18.07%</td><td>€0.34</td><td>€5.03</td></tr>
+              <tr><td>siltās grīdas kalkulators</td><td>14</td><td>12.39%</td><td>€0.38</td><td>€5.36</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h2>Izsoles — konkurenti</h2>
+          <table class="table">
+            <thead><tr><th>Domēns</th><th>Impr. share</th><th>Top of page rate</th></tr></thead>
+            <tbody>
+              <tr><td>DK GRĪDAS (You)</td><td>49.32%</td><td>82.03%</td></tr>
+              <tr><td>octorebus.lv</td><td>15.43%</td><td>86.37%</td></tr>
+              <tr><td>uponor.com</td><td>15.07%</td><td>83.98%</td></tr>
+              <tr><td>warmup.lv</td><td>13.62%</td><td>88.79%</td></tr>
+              <tr><td>arilans.lv</td><td>12.61%</td><td>89.02%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLIXTELL -->
+    <div class="card fade-in">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+        <h2>Clixtell — Click Fraud monitorings</h2>
+        <span class="badge">Nov 1 – Nov 30, 2025</span>
+      </div>
+      <div class="kpis" style="margin-top:8px">
+        <div class="kpi"><div class="label">Total Paid Clicks</div><div class="value">1,087</div></div>
+        <div class="kpi"><div class="label">Unique Paid Visitors</div><div class="value">857</div></div>
+        <div class="kpi"><div class="label">Suspicious Clicks</div><div class="value">61</div></div>
+        <div class="kpi"><div class="label">Detection Rate</div><div class="value">6%</div></div>
+      </div>
+      <div class="muted" style="margin-top:6px">Budget Saved: €21.35. Aizdomīgo klikšķu īpatsvars zem 10% robežas — turpināt IP bloķēšanu.</div>
+    </div>
+
+    <!-- WIX -->
+    <div class="card fade-in">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+        <h2>WIX mājaslapa</h2>
+        <span class="badge">Last 30 days · salīdzināts ar Oct 7 – Nov 5, 2025</span>
+      </div>
+      <div class="kpis" style="margin-top:8px">
+        <div class="kpi"><div class="label">Sesijas</div><div class="value">363 <span class="muted">(-17%)</span></div></div>
+        <div class="kpi"><div class="label">Unikālie apmeklētāji</div><div class="value">330 <span class="muted">(-14%)</span></div></div>
+        <div class="kpi"><div class="label">Lapaspuses skatījumi</div><div class="value">663 <span class="muted">(-15%)</span></div></div>
+        <div class="kpi"><div class="label">Avg pages / session</div><div class="value">1.5 <span class="muted">(0%)</span></div></div>
+        <div class="kpi"><div class="label">Avg session duration</div><div class="value">4m 37s <span class="muted">(+36%)</span></div></div>
+        <div class="kpi"><div class="label">Bounce rate</div><div class="value">58.6% <span class="muted">(+8%)</span></div></div>
+        <div class="kpi"><div class="label">Klikšķi uz kontaktiem</div><div class="value">6 <span class="muted">(-50%)</span></div></div>
+        <div class="kpi"><div class="label">Formu iesniegumi</div><div class="value">1 <span class="muted">(-90%)</span></div></div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:12px">
+        <div class="card">
+          <h2>Trafika avoti</h2>
+          <table class="table">
+            <thead><tr><th>Avots</th><th>Sesijas</th></tr></thead>
+            <tbody>
+              <tr><td>Google (Paid)</td><td>270 <span class="muted">(-13%)</span></td></tr>
+              <tr><td>Direct</td><td>68 <span class="muted">(-20%)</span></td></tr>
+              <tr><td>Google (Organic)</td><td>16 <span class="muted">(-36%)</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h2>Populārākās lapas</h2>
+          <table class="table">
+            <thead><tr><th>Lapa</th><th>Sesijas</th></tr></thead>
+            <tbody>
+              <tr><td>/homepage</td><td>318 <span class="muted">(-12%)</span></td></tr>
+              <tr><td>/kalkulators</td><td>61 <span class="muted">(-24%)</span></td></tr>
+              <tr><td>/galerija</td><td>54 <span class="muted">(-8%)</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h2>Visbiežāk klikšķinātās pogas</h2>
+        <table class="table">
+          <thead><tr><th>Poga</th><th>Skaits</th></tr></thead>
+          <tbody>
+            <tr><td>Sazināties! (uz /homepage)</td><td>5</td></tr>
+            <tr><td>Par Mums (uz /homepage)</td><td>4</td></tr>
+            <tr><td>Sazināties! (uz /kalkulators)</td><td>4</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- META / FACEBOOK -->
+    <div class="card fade-in">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+        <h2>Facebook (Meta)</h2>
+        <span class="badge">Boosted post · Sep 18 – Nov 30, 2025</span>
+      </div>
+      <div class="kpis" style="margin-top:8px">
+        <div class="kpi"><div class="label">Views</div><div class="value">56K</div></div>
+        <div class="kpi"><div class="label">Post engagements</div><div class="value">1.6K</div></div>
+        <div class="kpi"><div class="label">Cost per engagement</div><div class="value">$0.10</div></div>
+        <div class="kpi"><div class="label">Link clicks</div><div class="value">119</div></div>
+        <div class="kpi"><div class="label">CTR (link)</div><div class="value">0.21%</div></div>
+        <div class="kpi"><div class="label">Spend</div><div class="value">$152.66</div></div>
+      </div>
+      <div class="muted" style="margin-top:6px">Auditorija: 66% vīrieši, 30% sievietes · Spēcīgākā lokācija — Rīgas reģions.</div>
+    </div>
+
+    <!-- SECINĀJUMI -->
+    <div class="card fade-in conclusions">
+      <h2>Secinājumi</h2>
+      <div class="grid grid-2" style="margin-top:8px">
+        <div class="card">
+          <b>Google Ads.</b> CTR 15.82% un CPC €0.35 — efektīvi. “Siltās grīdas”, “Estrich grīda”, “Melnās grīdas betonēšana” dod lielāko apjomu. Ieteikums: palielināt budžetu TOP frāzēm un testēt jaunas long-tail variācijas ap kalkulatoru.
+        </div>
+        <div class="card">
+          <b>Clixtell.</b> Detection 6% (61 aizdomīgi klikšķi) — zem kontroles. Turpināt IP bloķēšanu un pārskatīt stundas/dienas ar pīķiem.
+        </div>
+        <div class="card">
+          <b>WIX.</b> Trafiks samazinās (-17%), bet sesiju ilgums +36% — kvalitāte aug. Uzlabot /homepage “above the fold”, izcelt CTA uz /kalkulators, pieslēgt papildu UTM kampaņām.
+        </div>
+        <div class="card">
+          <b>Facebook/Meta.</b> 56K skatījumi un 1.6K engagement — labs redzamības kanāls. Lai celtu <i>link clicks</i>, testēt link-postus ar “pirms/pēc” vizuāliem un CTA uz kalkulatoru; ieslēgt remarketingu no Google Paid apmeklētājiem.
+        </div>
+      </div>
+    </div>
+
+    <p class="foot">SIA DK GRĪDAS · 📞 +371 26868094 · 📧 info@dkgridas.lv · 🌐 www.dkgridas.lv</p>
+  </div>
+</body>
+</html>
+
