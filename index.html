@@ -35,6 +35,15 @@
   }
   .card img{width:100%;height:auto;display:block;border-radius:10px}
   .empty{color:var(--muted);font-size:14px;padding:12px}
+  .section{margin-top:18px}
+  .section h2{margin:0 0 10px;font-size:18px}
+  .stats-grid{display:grid;gap:12px;grid-template-columns:1fr}
+  @media(min-width:720px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:var(--card);border-radius:12px;padding:10px;box-shadow:0 6px 16px rgba(2,6,23,.08)}
+  .stat .label{color:var(--muted);font-size:12px}
+  .stat .value{font-size:18px;font-weight:700}
+  .list{background:var(--card);border-radius:12px;padding:10px;box-shadow:0 6px 16px rgba(2,6,23,.08)}
+  .list ul{margin:0;padding-left:18px}
 </style>
 </head>
 <body>
@@ -46,6 +55,18 @@
     </div>
     <div class="gallery">
       <div class='card'><img src='./DEC2025/Screenshot 2026-01-09 140355.png' alt='Screenshot 2026-01-09 140355' /></div>
+    </div>
+    <div class="section">
+      <div class='section'>
+  <h2>Extracted stats</h2>
+  <div class='stats-grid'><div class='stat'><div class='label'>Site sessions</div><div class='value'>321 (-12%)</div><div class='label'>Today 5, yesterday 17</div></div><div class='stat'><div class='label'>Unique visitors</div><div class='value'>292 (-12%)</div><div class='label'>Today 5, yesterday 16</div></div><div class='stat'><div class='label'>Clicks to contact</div><div class='value'>1 (-80%)</div><div class='label'>Today 0, yesterday 0</div></div><div class='stat'><div class='label'>Form submissions</div><div class='value'>2</div><div class='label'>Today 0, yesterday 0</div></div><div class='stat'><div class='label'>Page views</div><div class='value'>596 (-5%)</div><div class='label'>Today 6, yesterday 29</div></div></div>
+  <div class='stats-grid' style='margin-top:12px'>
+    <div class='list'><div class='label'>Top traffic sources</div><ul><li>Google (Paid): 247 (-10%)</li><li>Direct: 53 (-21%)</li><li>Google (Organic): 18 (+20%)</li></ul></div>
+    <div class='list'><div class='label'>Most visited pages</div><ul><li>/homepage: 281 (-14%)</li><li>/galerija: 52 (-2%)</li></ul></div>
+    <div class='list'><div class='label'>Engagement</div><ul><li>Avg pages per session: 1.6 (+6%)</li><li>Avg session duration: 3m 29s (-20%)</li></ul></div>
+    <div class='list'><div class='label'>Most clicked buttons</div><ul><li>Sazinaties! on /kalkulators: 3</li><li>DK GRIDAS text link on /kalkulators: 2</li></ul></div>
+  </div>
+</div>
     </div>
   </div>
 </body>

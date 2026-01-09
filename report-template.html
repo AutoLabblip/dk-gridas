@@ -35,6 +35,15 @@
   }
   .card img{width:100%;height:auto;display:block;border-radius:10px}
   .empty{color:var(--muted);font-size:14px;padding:12px}
+  .section{margin-top:18px}
+  .section h2{margin:0 0 10px;font-size:18px}
+  .stats-grid{display:grid;gap:12px;grid-template-columns:1fr}
+  @media(min-width:720px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:var(--card);border-radius:12px;padding:10px;box-shadow:0 6px 16px rgba(2,6,23,.08)}
+  .stat .label{color:var(--muted);font-size:12px}
+  .stat .value{font-size:18px;font-weight:700}
+  .list{background:var(--card);border-radius:12px;padding:10px;box-shadow:0 6px 16px rgba(2,6,23,.08)}
+  .list ul{margin:0;padding-left:18px}
 </style>
 </head>
 <body>
@@ -46,6 +55,9 @@
     </div>
     <div class="gallery">
       {{IMAGES}}
+    </div>
+    <div class="section">
+      {{DATA_SECTION}}
     </div>
   </div>
 </body>

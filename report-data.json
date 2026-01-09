@@ -1,0 +1,26 @@
+{
+  "key_stats": [
+    { "label": "Site sessions", "value": "321 (-12%)", "note": "Today 5, yesterday 17" },
+    { "label": "Unique visitors", "value": "292 (-12%)", "note": "Today 5, yesterday 16" },
+    { "label": "Clicks to contact", "value": "1 (-80%)", "note": "Today 0, yesterday 0" },
+    { "label": "Form submissions", "value": "2", "note": "Today 0, yesterday 0" },
+    { "label": "Page views", "value": "596 (-5%)", "note": "Today 6, yesterday 29" }
+  ],
+  "top_sources": [
+    { "label": "Google (Paid)", "value": "247 (-10%)" },
+    { "label": "Direct", "value": "53 (-21%)" },
+    { "label": "Google (Organic)", "value": "18 (+20%)" }
+  ],
+  "top_pages": [
+    { "label": "/homepage", "value": "281 (-14%)" },
+    { "label": "/galerija", "value": "52 (-2%)" }
+  ],
+  "engagement": [
+    { "label": "Avg pages per session", "value": "1.6 (+6%)" },
+    { "label": "Avg session duration", "value": "3m 29s (-20%)" }
+  ],
+  "buttons": [
+    { "label": "Sazinaties! on /kalkulators", "value": "3" },
+    { "label": "DK GRIDAS text link on /kalkulators", "value": "2" }
+  ]
+}
